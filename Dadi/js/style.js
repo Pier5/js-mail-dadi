@@ -1,6 +1,7 @@
 let btnLancia = document.querySelector('#btn');
 let dadoUser = document.querySelector('#dado');
 let dadoCpu = document.querySelector('#dadoDue');
+let result = document.querySelector('.output');
 
 btnLancia.addEventListener('click', function() {
     
@@ -8,11 +9,11 @@ btnLancia.addEventListener('click', function() {
     dadoCpu.innerHTML = dadoDue = Math.floor(Math.random() * (6) + 1);  
 
     if (dado > dadoDue) {
-        alert("Hai vinto")
+        result.innerHTML = 'Hai vinto!';
     } else if (dado == dadoDue) {
-        alert("Pareggio");
+        result.innerHTML = 'Pareggio! Ritenta';
     } else {
-        alert("Hai perso");
+        result.innerHTML = 'Hai perso! Ritenta';
     } 
 })
     

@@ -4,8 +4,8 @@ let dadoCpu = document.querySelector('#dadoDue');
 
 btnLancia.addEventListener('click', function() {
     
-    dadoUser.innerHTML = dado = Math.round(Math.random()*6);
-    dadoCpu.innerHTML = dadoDue = Math.round(Math.random()*6);  
+    dadoUser.innerHTML = dado = Math.floor(Math.random() * (6) + 1);
+    dadoCpu.innerHTML = dadoDue = Math.floor(Math.random() * (6) + 1);  
 
     if (dado > dadoDue) {
         alert("Hai vinto")
